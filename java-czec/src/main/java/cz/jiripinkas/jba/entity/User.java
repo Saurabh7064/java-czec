@@ -3,7 +3,6 @@ package cz.jiripinkas.jba.entity;
 import java.util.List;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinTable;
@@ -27,7 +26,7 @@ public class User {
 	@JoinTable
 	private List<Role> roles;
 	
-	@OneToMany(mappedBy="user",fetch = FetchType.EAGER)
+	@OneToMany(mappedBy="user")
 	private List<Blog> blogs;
 
 	public List<Blog> getBlogs() {
