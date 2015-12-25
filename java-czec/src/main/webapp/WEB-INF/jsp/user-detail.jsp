@@ -3,10 +3,14 @@
 
 <%@ include file="../layout/taglib.jsp"%>
 
-<h1>${user.name}</h1>
+<h1>Name:${user.name}</h1>
 
-<h1>${user.id}</h1>
+<h1>Email:${user.email}</h1>
+<%-- <c:forEach items="${user.roles}" var="roles">
+<h1>roles:${roles.name}</h1>
 
+			</c:forEach>
+ --%>
 <c:forEach items="${user.blogs}" var="blog">
 	<h1>${blog.name}</h1>
 	<p>${blog.url}</p>

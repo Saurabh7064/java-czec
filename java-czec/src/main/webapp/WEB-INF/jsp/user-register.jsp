@@ -22,9 +22,11 @@
 			<form:password path="password" cssClass="form-control" />
 		</div>
 	</div>
+	<center>
 	<div class="form-group">
 		<div class="col-sm-2">
 			<input type="submit" value="Save" class="btn btn-lg btn-primary" />
 		</div>
 	</div>
+	</center>
 </form:form>
