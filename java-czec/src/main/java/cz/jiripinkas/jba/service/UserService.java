@@ -44,4 +44,9 @@ public class UserService {
 		user.setBlogs(blogs);
 		return user;
 	}
+	
+	public void save(User user) {
+		userRepository.save(user);
+	}
+
 }
