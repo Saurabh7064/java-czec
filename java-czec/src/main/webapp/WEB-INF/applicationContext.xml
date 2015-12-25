@@ -44,4 +44,5 @@
 	<jpa:repositories base-package="cz.jiripinkas.jba.repository" />
 	
 <import resource="security.xml" />
+<bean id="webexpressionHandler" class="org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler" /> 
 </beans>
